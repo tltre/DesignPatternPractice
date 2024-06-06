@@ -27,19 +27,6 @@ public class FunnyJSONExplorer {
         return -1;
     }
 
-    private static void getFactory() {
-        switch (iconFamily){
-            case "poker-face":
-                factory = new PFNodeFactory(style);
-                break;
-            case "tri-circle":
-                factory = new TCNodeFactory(style);
-                break;
-            default:
-                System.out.println("Invalid Icon!");
-        }
-    }
-
     private static void getNodes(int max_length) {
         int length = (max_length / 5 + 1) * 5;
 
@@ -98,13 +85,28 @@ public class FunnyJSONExplorer {
         }
     }
 
-    private static void load() {
-        BufferedReader reader = null;
+    private static void init() {
         rel = new ArrayList<>();
         rel.add(new ArrayList<>());
         levels = new ArrayList<>();
         values = new ArrayList<>();
         preIndex = new ArrayList<>();
+
+        switch (iconFamily){
+            case "poker-face":
+                factory = new PFNodeFactory(style);
+                break;
+            case "tri-circle":
+                factory = new TCNodeFactory(style);
+                break;
+            default:
+                System.out.println("Invalid Icon!");
+        }
+    }
+
+    private static void load() {
+        BufferedReader reader = null;
+
         int max_length = 0;
 
         // 1. 读取json文件
@@ -173,7 +175,7 @@ public class FunnyJSONExplorer {
         System.out.println("----------------------------");
         System.out.print("\n");
 
-        getFactory();
+        init();
         load();
         show();
     }

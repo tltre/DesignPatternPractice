@@ -1,7 +1,10 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Objects;
+import java.util.Queue;
 
 public class FunnyJSONExplorer {
     private static String filePath;
@@ -77,16 +80,13 @@ public class FunnyJSONExplorer {
         }
     }
 
-    private static void init() {
+    private static void load() {
+        BufferedReader reader = null;
         rel = new ArrayList<>();
         rel.add(new ArrayList<>());
         levels = new ArrayList<>();
         values = new ArrayList<>();
         preIndex = new ArrayList<>();
-    }
-
-    private static void load() {
-        BufferedReader reader = null;
         int max_length = 0;
 
         // 1. 读取json文件
@@ -155,7 +155,6 @@ public class FunnyJSONExplorer {
         System.out.println("----------------------------");
         System.out.print("\n");
 
-        init();
         load();
         show();
     }

@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class NodeFactory {
     private final String style;
     private final String icon;
@@ -17,14 +19,13 @@ public class NodeFactory {
         String value = values[idx];
         int level = levels[idx];
 
-        switch (style){
-            case "tree":
-                return new TreeNode(icon, value, isLeafNode, level, (TreeNode) parent);
-            case "rect":
-                return new RectNode(icon, value, isLeafNode, level, length - (value.length() + 3 * level + 1));
-            default:
-                System.out.println("Invalid Style!");
-                return null;
+        if (Objects.equals(style, "tree"))
+            return new TreeNode(icon, value, isLeafNode, level, (TreeNode) parent);
+        else if (Objects.equals(style, "rect"))
+            return new RectNode(icon, value, isLeafNode, level, length - (value.length() + 3 * level + 1));
+        else {
+            System.out.println("Invalid Style!");
+            return null;
         }
     }
 }
