@@ -24,7 +24,6 @@ public abstract class Node {
     public void setEndNode(boolean endNode) {
         isEndNode = endNode;
     }
-    
 
     public abstract void draw();
 }

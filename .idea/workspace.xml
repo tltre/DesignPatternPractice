@@ -4,30 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9769ec42-fda8-433c-a4db-8f30b553f44f" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPattern.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Factory/Factory.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Factory/ReadMe.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Factory/bin/FunnyJSONExplorer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Factory/bin/LeafNode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Factory/bin/Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Factory/bin/NodeFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Factory/bin/NonLeafNode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Factory/bin/RectNode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Factory/bin/TreeNode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Factory/fje.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Factory/run.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Factory/src/FunnyJSONExplorer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Factory/src/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Factory/src/NodeFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Factory/src/RectNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Factory/src/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.json" afterDir="false" />
+    <list default="true" id="9769ec42-fda8-433c-a4db-8f30b553f44f" name="更改" comment="Impl Factory-Method Module">
+      <change beforePath="$PROJECT_DIR$/Factory/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/Factory/src/Node.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,15 +115,36 @@
       <option name="presentableId" value="Default" />
       <updated>1717472543377</updated>
       <workItem from="1717472545076" duration="10983000" />
-      <workItem from="1717654332221" duration="15196000" />
+      <workItem from="1717654332221" duration="15510000" />
     </task>
+    <task id="LOCAL-00001" summary="Impl Factory-Method Module">
+      <created>1717675440165</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1717675440165</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Impl Factory-Method Module" />
+    <option name="LAST_COMMIT_MESSAGE" value="Impl Factory-Method Module" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
