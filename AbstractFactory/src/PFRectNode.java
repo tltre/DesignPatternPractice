@@ -1,11 +1,9 @@
-import java.util.Objects;
-
-public class RectNode extends Node {
+public class PFRectNode extends Node {
 
     private final int postfixNum;
 
-    RectNode(String icon, String val, boolean isLeafNode, int level, int postfixNum) {
-        super(icon, val, isLeafNode, level);
+    PFRectNode(String val, boolean isLeafNode, int level, int postfixNum) {
+        super(val, isLeafNode, level);
         this.postfixNum = postfixNum;
     }
 
@@ -30,17 +28,11 @@ public class RectNode extends Node {
         str += prefix;
 
         // 根据Icon类型
-        if (Objects.equals(icon, "poker-face")) {
-            if (isLeafNode)
-                str += "♤ ";
-            else
-                str += "♢ ";
-        } else if (Objects.equals(icon, "tri-circle")) {
-            if (isLeafNode)
-                str += "● ";
-            else
-                str += "▷ ";
-        }
+        if (isLeafNode)
+            str += "♤ ";
+        else
+            str += "♢ ";
+
         str += val;
         str += " ";
 

@@ -4,8 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9769ec42-fda8-433c-a4db-8f30b553f44f" name="更改" comment="Impl Factory-Method Module">
-      <change beforePath="$PROJECT_DIR$/Factory/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/Factory/src/Node.java" afterDir="false" />
+    <list default="true" id="9769ec42-fda8-433c-a4db-8f30b553f44f" name="更改" comment="Modify .gitignore">
+      <change afterPath="$PROJECT_DIR$/AbstractFactory/AbstractFactory.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AbstractFactory/ReadMe.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AbstractFactory/fje.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AbstractFactory/src/FunnyJSONExplorer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AbstractFactory/src/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AbstractFactory/src/NodeFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AbstractFactory/src/PFNodeFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AbstractFactory/src/PFRectNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AbstractFactory/src/PFTreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AbstractFactory/src/TCNodeFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AbstractFactory/src/TCRectNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AbstractFactory/src/TCTreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Factory/src/RectNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/Factory/src/RectNode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +56,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "C:/Users/xy/Desktop/University/CodeProject/软件工程/DesignPattern",
+    "last_opened_file_path": "C:/Users/xy/Desktop/University/CodeProject/软件工程/DesignPattern/AbstractFactory",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -57,15 +71,17 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\xy\Desktop\University\CodeProject\软件工程\DesignPattern\AbstractFactory" />
+      <recent name="C:\Users\xy\Desktop\University\CodeProject\软件工程\DesignPattern\AbstractFactory\src" />
       <recent name="C:\Users\xy\Desktop\大学\实践\软件工程\DesignPattern\out\production\Factory" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.FJE-tree-PF">
+  <component name="RunManager" selected="应用程序.FJE-tree-TC">
     <configuration name="FJE-rect-PF" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="FunnyJSONExplorer" />
-      <module name="Factory" />
+      <module name="AbstractFactory" />
       <option name="PROGRAM_PARAMETERS" value="-f test.json -s rect -i poker-face" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -73,7 +89,7 @@
     </configuration>
     <configuration name="FJE-rect-TC" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="FunnyJSONExplorer" />
-      <module name="Factory" />
+      <module name="AbstractFactory" />
       <option name="PROGRAM_PARAMETERS" value="-f test.json -s rect -i tri-circle" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -83,7 +99,7 @@
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="FunnyJSONExplorer" />
-      <module name="Factory" />
+      <module name="AbstractFactory" />
       <option name="PROGRAM_PARAMETERS" value="-f test.json -s tree -i poker-face" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -93,7 +109,7 @@
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="FunnyJSONExplorer" />
-      <module name="Factory" />
+      <module name="AbstractFactory" />
       <option name="PROGRAM_PARAMETERS" value="-f test.json -s tree -i tri-circle" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -115,7 +131,7 @@
       <option name="presentableId" value="Default" />
       <updated>1717472543377</updated>
       <workItem from="1717472545076" duration="10983000" />
-      <workItem from="1717654332221" duration="15510000" />
+      <workItem from="1717654332221" duration="18532000" />
     </task>
     <task id="LOCAL-00001" summary="Impl Factory-Method Module">
       <created>1717675440165</created>
@@ -124,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717675440165</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Modify .gitignore">
+      <created>1717675821746</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717675821746</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,7 +167,19 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Impl Factory-Method Module" />
-    <option name="LAST_COMMIT_MESSAGE" value="Impl Factory-Method Module" />
+    <MESSAGE value="Modify .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modify .gitignore" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/AbstractFactory/src/FunnyJSONExplorer.java</url>
+          <line>175</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
