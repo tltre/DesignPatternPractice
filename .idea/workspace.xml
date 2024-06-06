@@ -4,26 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9769ec42-fda8-433c-a4db-8f30b553f44f" name="更改" comment="Impl AbstractFactory Module">
-      <change afterPath="$PROJECT_DIR$/Builder/Builder.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Builder/src/Builder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Builder/src/FunnyJSONExplorer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Builder/src/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Builder/src/RectBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Builder/src/TreeBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Composition/Composition.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Composition/src/FunnyJSONExplorer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Composition/src/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Composition/src/NodeFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Composition/src/RectNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Composition/src/TreeNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="9769ec42-fda8-433c-a4db-8f30b553f44f" name="更改" comment="Impl Builder Module">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AbstractFactory/src/FunnyJSONExplorer.java" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractFactory/src/FunnyJSONExplorer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AbstractFactory/src/PFNodeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractFactory/src/PFNodeFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AbstractFactory/src/TCNodeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractFactory/src/TCNodeFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Factory/src/FunnyJSONExplorer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Factory/src/FunnyJSONExplorer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Factory/src/NodeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/Factory/src/NodeFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Composition/src/FunnyJSONExplorer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Composition/src/FunnyJSONExplorer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Composition/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/Composition/src/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Composition/src/NodeFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Composition/src/RectNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/Composition/src/LeafNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Composition/src/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/Composition/src/RootNode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +69,7 @@
       <recent name="C:\Users\xy\Desktop\大学\实践\软件工程\DesignPattern\out\production\Factory" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.FJE-rect-TC">
+  <component name="RunManager" selected="应用程序.FJE-tree-PF">
     <configuration name="FJE-rect-PF" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -95,7 +82,7 @@
     </configuration>
     <configuration name="FJE-rect-TC" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="FunnyJSONExplorer" />
-      <module name="Builder" />
+      <module name="Composition" />
       <option name="PROGRAM_PARAMETERS" value="-f test.json -s rect -i tri-circle" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -105,7 +92,7 @@
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="FunnyJSONExplorer" />
-      <module name="Builder" />
+      <module name="Composition" />
       <option name="PROGRAM_PARAMETERS" value="-f test.json -s tree -i poker-face" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -115,7 +102,7 @@
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="FunnyJSONExplorer" />
-      <module name="Builder" />
+      <module name="Composition" />
       <option name="PROGRAM_PARAMETERS" value="-f test.json -s tree -i tri-circle" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -137,7 +124,7 @@
       <option name="presentableId" value="Default" />
       <updated>1717472543377</updated>
       <workItem from="1717472545076" duration="10983000" />
-      <workItem from="1717654332221" duration="30281000" />
+      <workItem from="1717654332221" duration="38303000" />
     </task>
     <task id="LOCAL-00001" summary="Impl Factory-Method Module">
       <created>1717675440165</created>
@@ -160,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717678914162</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Impl Builder Module">
+      <created>1717691166543</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1717691166543</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,7 +176,19 @@
     <MESSAGE value="Impl Factory-Method Module" />
     <MESSAGE value="Modify .gitignore" />
     <MESSAGE value="Impl AbstractFactory Module" />
-    <option name="LAST_COMMIT_MESSAGE" value="Impl AbstractFactory Module" />
+    <MESSAGE value="Impl Builder Module" />
+    <option name="LAST_COMMIT_MESSAGE" value="Impl Builder Module" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Composition/src/FunnyJSONExplorer.java</url>
+          <line>133</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

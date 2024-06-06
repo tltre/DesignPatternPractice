@@ -1,93 +1,28 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Objects;
-import java.util.Queue;
+import java.util.*;
 
 public class FunnyJSONExplorer {
     private static String filePath;
     private static String style;
     private static String iconFamily;
+    private static int max_length;
 
-    private static ArrayList<ArrayList<Integer>> rel;
-    private static ArrayList<Integer> levels;
-    private static ArrayList<String> values;
-    private static ArrayList<Integer> preIndex;
-    private static Node[] nodes;
+    private static Stack<Node> stack;
 
-    private static int getPreIndex(int level) {
-        for (int i = levels.size() - 1; i >= 0; i--) {
-            if (levels.get(i) < level) {
-                return i;
-            }
-        }
-        return -1;
-    }
+    private static RootNode root;
 
-    private static void getNodes(int max_length) {
-        int length = (max_length / 5 + 1) * 5;
-        NodeFactory factory = new NodeFactory(style, iconFamily, levels.toArray(new Integer[0]), values.toArray(values.toArray(new String[0])), length);
-
-        Queue<Integer> queue = new LinkedList<>();
-        queue.offer(0);
-
-        nodes = new Node[levels.size()];
-
-        // flags: 0 代表普通节点；1代表头部节点；-1代表尾部节点
-        int[] flags = new int[levels.size()];
-
-        while (!queue.isEmpty()) {
-            int idx = queue.poll();
-            ArrayList<Integer> nums = rel.get(idx);
-            for (int i = 0; i < nums.size(); i++) {
-                if (Objects.equals(style, "tree")) {
-                    if (i == nums.size() - 1) {
-                        flags[nums.get(i) - 1] = -1;
-                    }
-                } else if (Objects.equals(style, "rect")) {
-                    if (nums.get(i) == 1) {
-                        flags[nums.get(i) - 1] = 1;
-                    } else if (nums.get(i) == levels.size()) {
-                        flags[nums.get(i) - 1] = -1;
-                    }
-                }
-                queue.offer(nums.get(i));
-            }
-
-            if (idx == 0)
-                continue;
-
-            Node parent = null;
-            if (preIndex.get(idx - 1) != -1) {
-                parent = nodes[preIndex.get(idx - 1)];
-            }
-
-            Node newNode;
-            if (nums.size() == 0)
-                newNode = factory.createNode(true, idx - 1, parent);
-            else {
-                newNode = factory.createNode(false, idx - 1, parent);
-            }
-
-            if (flags[idx - 1] == 1) {
-                newNode.setStartNode(true);
-            } else if (flags[idx - 1] == -1) {
-                newNode.setEndNode(true);
-            }
-            nodes[idx - 1] = newNode;
-        }
+    private static void init() {
+        stack = new Stack<>();
     }
 
     private static void load() {
         BufferedReader reader = null;
-        rel = new ArrayList<>();
-        rel.add(new ArrayList<>());
-        levels = new ArrayList<>();
-        values = new ArrayList<>();
-        preIndex = new ArrayList<>();
-        int max_length = 0;
+
+        max_length = 0;
+        String preVal = "";
+        int preLevel = 0;
 
         // 1. 读取json文件
         try {
@@ -106,12 +41,21 @@ public class FunnyJSONExplorer {
                     val += ": ";
                     val += items[1].split("\"")[1];
                 }
-                // 3. 存储Item信息
-                preIndex.add(getPreIndex(level));
-                rel.get(getPreIndex(level) + 1).add(rel.size());
-                rel.add(new ArrayList<>());
-                levels.add(level);
-                values.add(val);
+
+                // 3. 构造Node节点
+                switch (style) {
+                    case "tree":
+                        createNodeInTree(level, preLevel, preVal);
+                        break;
+                    case "rect":
+                        createNodeInRect(level, preLevel, preVal);
+                        break;
+                    default:
+                        System.out.println("Invalid Style!");
+                }
+
+                preLevel = level;
+                preVal = val;
                 max_length = Math.max(max_length, 1 + 3 * level + val.length());
             }
         } catch (IOException e) {
@@ -125,14 +69,69 @@ public class FunnyJSONExplorer {
                 }
             }
         }
-        // 4. 根据style、节点level构造节点
-        getNodes(max_length);
+        // 4. 处理最后一个节点
+        switch (style) {
+            case "tree":
+                createNodeInTree(0, preLevel, preVal);
+                break;
+            case "rect":
+                createNodeInRect(0, preLevel, preVal);
+                break;
+            default:
+                System.out.println("Invalid Style!");
+        }
+        root = (RootNode) stack.firstElement();
+    }
+
+    private static void createNodeInTree(int level, int preLevel, String preVal) {
+        Node newNode;
+        if (level <= preLevel)
+            newNode = new LeafNode(iconFamily, preVal, preLevel);
+        else
+            newNode = new RootNode(iconFamily, preVal, preLevel);
+
+        if (preLevel > 0) {
+            while (stack.peek().level >= preLevel) {
+                if (stack.peek().level == preLevel) {
+                    stack.peek().setEndNode(false);
+                }
+                stack.pop();
+            }
+            newNode.setParent(stack.peek());
+            ((RootNode) stack.peek()).addChild(newNode);
+        }
+
+        stack.add(newNode);
+    }
+
+    private static void createNodeInRect(int level, int preLevel, String preVal) {
+        Node newNode;
+        if (level <= preLevel)
+            newNode = new LeafNode(iconFamily, preVal, preLevel);
+        else
+            newNode = new RootNode(iconFamily, preVal, preLevel);
+
+        if (preLevel > 0) {
+            while (stack.peek().level >= preLevel) {
+                stack.pop();
+            }
+            newNode.setParent(stack.peek());
+            ((RootNode) stack.peek()).addChild(newNode);
+        }
+
+        newNode.setStartNode(false);
+        newNode.setEndNode(false);
+
+        if (preLevel == 1 && ((RootNode) stack.firstElement()).getChildren().size() == 1)
+            newNode.setStartNode(true);
+        if (level == 0)
+            newNode.setEndNode(true);
+
+        stack.add(newNode);
     }
 
     private static void show() {
-        for (Node node : nodes) {
-            node.draw();
-        }
+        root.draw(style, (max_length / 5 + 1) * 5);
     }
 
     public static void main(String[] args) {
@@ -155,6 +154,7 @@ public class FunnyJSONExplorer {
         System.out.println("----------------------------");
         System.out.print("\n");
 
+        init();
         load();
         show();
     }
