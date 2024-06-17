@@ -4,13 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9769ec42-fda8-433c-a4db-8f30b553f44f" name="更改" comment="Impl Builder Module">
+    <list default="true" id="9769ec42-fda8-433c-a4db-8f30b553f44f" name="更改" comment="Add .gitignore">
+      <change afterPath="$PROJECT_DIR$/AF.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/B.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/C.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Design.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Design.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExtendComposition/ExtendComposition.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExtendComposition/design.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExtendComposition/icons.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExtendComposition/src/DFSIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExtendComposition/src/DrawingRectStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExtendComposition/src/DrawingStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExtendComposition/src/DrawingTreeStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExtendComposition/src/FunnyJSONExplorer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExtendComposition/src/Iterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExtendComposition/src/LeafNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExtendComposition/src/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExtendComposition/src/RootNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/F.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Composition/src/FunnyJSONExplorer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Composition/src/FunnyJSONExplorer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Composition/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/Composition/src/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Composition/src/NodeFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Composition/src/RectNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/Composition/src/LeafNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Composition/src/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/Composition/src/RootNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignPattern.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DesignPattern.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +62,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "C:/Users/xy/Desktop/University/CodeProject/软件工程/DesignPattern/Composition/src",
+    "last_opened_file_path": "C:/Users/xy/Desktop/University/CodeProject/软件工程/DesignPattern/out/production",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -62,11 +77,15 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\xy\Desktop\University\CodeProject\软件工程\DesignPattern\out\production" />
+      <recent name="C:\Users\xy\Desktop\University\CodeProject\软件工程\DesignPattern\ExtendComposition\src" />
       <recent name="C:\Users\xy\Desktop\University\CodeProject\软件工程\DesignPattern\Composition\src" />
       <recent name="C:\Users\xy\Desktop\University\CodeProject\软件工程\DesignPattern\Builder\src" />
       <recent name="C:\Users\xy\Desktop\University\CodeProject\软件工程\DesignPattern\AbstractFactory" />
-      <recent name="C:\Users\xy\Desktop\University\CodeProject\软件工程\DesignPattern\AbstractFactory\src" />
-      <recent name="C:\Users\xy\Desktop\大学\实践\软件工程\DesignPattern\out\production\Factory" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\xy\Desktop\University\CodeProject\软件工程\DesignPattern" />
+      <recent name="C:\Users\xy\Desktop\University\CodeProject\软件工程\DesignPattern\out\production\ExtendComposition" />
     </key>
   </component>
   <component name="RunManager" selected="应用程序.FJE-tree-PF">
@@ -74,7 +93,7 @@
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="FunnyJSONExplorer" />
-      <module name="Builder" />
+      <module name="ExtendComposition" />
       <option name="PROGRAM_PARAMETERS" value="-f test.json -s rect -i poker-face" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -82,7 +101,7 @@
     </configuration>
     <configuration name="FJE-rect-TC" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="FunnyJSONExplorer" />
-      <module name="Composition" />
+      <module name="ExtendComposition" />
       <option name="PROGRAM_PARAMETERS" value="-f test.json -s rect -i tri-circle" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -92,7 +111,7 @@
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="FunnyJSONExplorer" />
-      <module name="Composition" />
+      <module name="ExtendComposition" />
       <option name="PROGRAM_PARAMETERS" value="-f test.json -s tree -i poker-face" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -102,7 +121,7 @@
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="FunnyJSONExplorer" />
-      <module name="Composition" />
+      <module name="ExtendComposition" />
       <option name="PROGRAM_PARAMETERS" value="-f test.json -s tree -i tri-circle" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -125,6 +144,10 @@
       <updated>1717472543377</updated>
       <workItem from="1717472545076" duration="10983000" />
       <workItem from="1717654332221" duration="38303000" />
+      <workItem from="1717699370455" duration="84000" />
+      <workItem from="1718199271202" duration="8621000" />
+      <workItem from="1718443228713" duration="1436000" />
+      <workItem from="1718606902091" duration="6548000" />
     </task>
     <task id="LOCAL-00001" summary="Impl Factory-Method Module">
       <created>1717675440165</created>
@@ -154,7 +177,21 @@
       <option name="project" value="LOCAL" />
       <updated>1717691166543</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Impl Composition Module">
+      <created>1717699409357</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1717699409357</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add .gitignore">
+      <created>1718444340412</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1718444340412</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,18 +214,16 @@
     <MESSAGE value="Modify .gitignore" />
     <MESSAGE value="Impl AbstractFactory Module" />
     <MESSAGE value="Impl Builder Module" />
-    <option name="LAST_COMMIT_MESSAGE" value="Impl Builder Module" />
+    <MESSAGE value="Impl Composition Module" />
+    <MESSAGE value="Add .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add .gitignore" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Composition/src/FunnyJSONExplorer.java</url>
-          <line>133</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="DFSIterator" memberName="cache" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
