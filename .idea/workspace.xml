@@ -4,28 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9769ec42-fda8-433c-a4db-8f30b553f44f" name="更改" comment="Add .gitignore">
-      <change afterPath="$PROJECT_DIR$/AF.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/B.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/C.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Design.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Design.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ExtendComposition/ExtendComposition.iml" afterDir="false" />
+    <list default="true" id="9769ec42-fda8-433c-a4db-8f30b553f44f" name="更改" comment="Update Composition Method">
       <change afterPath="$PROJECT_DIR$/ExtendComposition/design.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ExtendComposition/icons.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ExtendComposition/src/DFSIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ExtendComposition/src/DrawingRectStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ExtendComposition/src/DrawingStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ExtendComposition/src/DrawingTreeStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ExtendComposition/src/FunnyJSONExplorer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ExtendComposition/src/Iterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ExtendComposition/src/LeafNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ExtendComposition/src/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ExtendComposition/src/RootNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/F.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPattern.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DesignPattern.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +50,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
+    "project.structure.last.edited": "项目",
     "project.structure.proportion": "0.17",
     "project.structure.side.proportion": "0.30602637",
     "settings.editor.selected.configurable": "terminal",
@@ -147,7 +129,8 @@
       <workItem from="1717699370455" duration="84000" />
       <workItem from="1718199271202" duration="8621000" />
       <workItem from="1718443228713" duration="1436000" />
-      <workItem from="1718606902091" duration="6548000" />
+      <workItem from="1718606902091" duration="7097000" />
+      <workItem from="1718697912930" duration="42000" />
     </task>
     <task id="LOCAL-00001" summary="Impl Factory-Method Module">
       <created>1717675440165</created>
@@ -191,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718444340412</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Update Composition Method">
+      <created>1718618575710</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1718618575710</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,7 +206,8 @@
     <MESSAGE value="Impl Builder Module" />
     <MESSAGE value="Impl Composition Module" />
     <MESSAGE value="Add .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add .gitignore" />
+    <MESSAGE value="Update Composition Method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Composition Method" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
